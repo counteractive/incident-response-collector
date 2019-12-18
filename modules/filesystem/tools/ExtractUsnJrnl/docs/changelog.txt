@@ -1,0 +1,13 @@
+ExtractUsnJrnl changelog
+
+v1.0.0.5: Removed unused code.
+
+v1.0.0.4: Added new optional parameter /OutputName to override the original filename.
+
+v1.0.0.3: Added support for image files and raw device.
+
+v1.0.0.2: Fixed bug with $MFT containing $ATTRIBUTE_LIST.
+
+v1.0.0.1: Added support for specifying output directory.
+
+v1.0.0.0: Initial version

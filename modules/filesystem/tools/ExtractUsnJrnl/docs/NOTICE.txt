@@ -1,0 +1,5 @@
+License, README, and changelog for ExtractUsnJrnl available in docs folder.
+
+This tool uses version 1.0.0.3, retrieved from ir-rescue repository (https://github.com/diogo-fernan/ir-rescue/tree/master/win/tools-win/fs) in order to avoid a false-positive with Windows Defender present in the latest version (v1.0.0.5 at the time of this writing).
+
+Will consider updating if and when that issue is resolved (https://github.com/jschicht/RawCopy/issues/25).
