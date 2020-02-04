@@ -41,3 +41,11 @@ This product depends on software developed by Joakim Schicht (Github user `jschi
 ## Belkasoft Live RAM Capturer
 
 This product depends on Belkasoft Live RAM Capturer, (C) Belkasoft 2002-2016.  This tool is freely distributed, though its license and source is not available at the time of writing. The product's official webpage is at https://belkasoft.com/ram-capturer, and they note "you can analyze memory dumps with the help of Belkasoft Evidence Center available at https://belkasoft.com/ec."
+
+## ir-rescue
+
+Various aspects of coding style and architecture were inspired by [ir-rescue](https://github.com/diogo-fernan/ir-rescue) by Diogo Fernan, as well as ideas for 3rd-party tools to include and employ.  This project attempts to solve a similar problem, and its author is grateful for Fernan's accessibility and community contributions.  We have successfully employed ir-rescue in a number of important situations and encourage users to explore it.
+
+## Brimor Labs Live Response Collection
+
+Various aspects of coding style and architecture were inspired by [Brimor Labs Live Response](https://www.brimorlabs.com/tools/) by Brian Moran, as well as ideas for 3rd-party tools to include and employ.  This project attempts to solve a similar problem, and its author is grateful for Moran's community contributions.  We have successfully employed Live Response in a number of important situations and encourage users to explore it.

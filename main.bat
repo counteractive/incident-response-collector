@@ -1,7 +1,7 @@
 @echo off
 
 :: incident-response-collector
-:: Copyright (C) 2019 Counteractive Security
+:: Copyright (C) 2020 Counteractive Security
 
 :: This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version. This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 :: You should have received a copy of the GNU General Public License in this package as LICENSE. If not, see <https://www.gnu.org/licenses/>.
@@ -80,7 +80,7 @@
   echo:
   echo Options:
   echo:
-  echo -h, --help, /?  display this help and exit
+  echo --help, -h, /?  display this help and exit
   echo --version       display version information and exit
   echo:
   echo For more information, or to report issues, visit https://github.com/counteractive/incident-response-collector.
