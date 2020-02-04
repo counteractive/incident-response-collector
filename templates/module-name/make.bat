@@ -12,7 +12,7 @@ if /I "%1" == "clean" goto:clean
   :: download sysinternals utilities (not distributed with this package to comply with license)
   echo downloading sysinternals tools
   mkdir "tools\sysinternals"
-  set _targets=handle.exe handle64.exe pslist.exe pslist64.exe Listdlls.exe Listdlls64.exe PsService.exe PsService64.exe
+  set _targets=list.exe each.exe executable.exe here.exe
   for %%G in (%_targets%) do (
     if exist "tools\sysinternals\%%G" (
       echo %%G already exists at tools\sysinternals\%%G
