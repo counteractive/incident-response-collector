@@ -6,7 +6,7 @@ Location: San Antonio, Texas, USA
 
 Contributor: Ferris Atassi
 Major: CS
-Location: Los Altos, California, USA
+Location: Los Altos, CA, USA
 
 Contributor: Sarah Garelick
 Major: Electrical Engineering
