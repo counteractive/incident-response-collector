@@ -8,6 +8,10 @@ Contributor: Ferris Atassi
 Major: CS
 Location: Los Altos, California, USA
 
+Contributor: Sarah Garelick
+Major: Electrical Engineering
+Location: Palm Beach Gardens, Florida, USA
+
 /* THANKS */
 Inspirations: Everyone involved in the prior art listed in the README
 
