@@ -12,6 +12,10 @@ Contributor: Sarah Garelick
 Major: Electrical Engineering
 Location: Palm Beach Gardens, Florida, USA
 
+Contributor: Clay Mudter
+Major: Computer Science
+Location: Nashville, Tennessee, USA
+
 /* THANKS */
 Inspirations: Everyone involved in the prior art listed in the README
 
