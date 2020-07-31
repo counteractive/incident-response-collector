@@ -1,0 +1,21 @@
+/* TEAM */
+Creator: Chris Hendricks
+Site: https://www.counteractive.net
+Twitter: @counteract_ive
+Location: San Antonio, Texas, USA
+
+Contributor: Ferris Atassi
+Major: CS
+Location: Los Altos, California, USA
+
+Contributor: Sarah Garelick
+Major: Electrical Engineering
+Location: Palm Beach Gardens, Florida, USA
+
+/* THANKS */
+Inspirations: Everyone involved in the prior art listed in the README
+
+Tool Authors: Everyone involved in creating and maintaining the tools used in each module
+
+/* SITE */
+Software: batch, many 3rd-party tools
