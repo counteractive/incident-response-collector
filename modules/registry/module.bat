@@ -9,7 +9,7 @@ setlocal enableextensions enabledelayedexpansion
 :: tags: users, registry hives, profiles
 
 :: TODO: update module-name
-set _mod_name=module-name
+set _mod_name= registry
 
 :setup
   :: TODO: remove when implemented
