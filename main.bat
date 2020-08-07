@@ -63,6 +63,7 @@
   call "%_modules%\activity\module"
   call "%_modules%\browsing\module"
   call "%_modules%\dirwalk\module"
+  call "%_modules%\usb\module"
 
   :: unimplemented
   :: call "%_modules%\disk-image\module"
