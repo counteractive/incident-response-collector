@@ -1,14 +1,14 @@
 @echo off
 setlocal enableextensions enabledelayedexpansion
 
-:: name: sessioon
+:: name: session
 :: version: 1.0.0
 :: author: Sarah Garelick
 :: description: collects data on computer sessions and the session user
 :: notes: this module is licensed per the terms in the LICENSE file at the root of this project. 3rd-party tools are used and/or shared per the terms of their respective licences. See the NOTICE file at the root of this project for details.
 :: tags: processed
 
-set _mod_name=sessions
+set _mod_name=session
 
 :setup
 
