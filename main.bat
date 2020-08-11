@@ -68,7 +68,6 @@
   :: unimplemented
   :: call "%_modules%\disk-image\module"
   :: call "%_modules%\browser-cache-files\module"
-  :: call "%_modules%\session\module"
 
   call "%_util%\log" "[%_app_name% %_app_ver%] ended main" "%_LOG%"
   goto:eof
