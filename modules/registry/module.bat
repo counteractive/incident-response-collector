@@ -45,13 +45,13 @@ set _mod_name= registry
   call "%_mod_util%\log" "[%_mod_name%] started module setup" "%_LOG%"
   mkdir "%_mod_output%"
 
-  :: TODO: update tool(s) and remove this check if module is cross-architecture
-  :: check for 32 or 64 bit operating system
- :: if exist "%PROGRAMFILES(X86)%" (
- ::   set _tool=%_mod_tools%\[tool-name-64bit.exe]
- ::) else (
- :: set _tool=%_mod_tools%\[tool-name-32bit.exe]
- :: )
+  ::"" TODO: update tool(s) and remove this check if module is cross-architecture
+   ::check for 32 or 64 bit operating system
+  if exist "%PROGRAMFILES(X86)%" (
+    set RCP=%_mod_tools%\RawCopy64.exe
+ ) else (
+  set RCP=%_mod_tools%\RawCopy.exe
+  )
 
   call:module
   goto:eof
@@ -63,12 +63,19 @@ set _mod_name= registry
 
   ::TODO: build command(s) based on the details of the module and its tool(s), see example below:
   call "%_mod_util%\log" "[%_mod_name%] collecting registry hives" "%_LOG%"
-  call:header "system registry hives"
-	call:cmd %REG%\log "%RCP% /FileNamePath:%SystemRoot%\System32\config\SAM /OutputPath:%_mod_output%\SAM.csv" 
-	call:cmd %REG%\log "%RCP% /FileNamePath:%SystemRoot%\System32\config\SECURITY /OutputPath:%_mod_output%\SECURITY.csv""
-	call:cmd %REG%\log "%RCP% /FileNamePath:%SystemRoot%\System32\config\SOFTWARE /OutputPath:%_mod_output%\SOFTWARE.csv"
-	call:cmd %REG%\log "%RCP% /FileNamePath:%SystemRoot%\System32\config\SYSTEM /OutputPath:%_mod_output%\SYSTEM.csv"
-	
+
+  call "%_mod_util%\log" "system registry hives"
+	call call "%_mod_util%\exec" "%RCP% /FileNamePath:%SystemRoot%\System32\config\SAM /OutputPath:%_mod_output%" "%_mod_output%\registry_hives.log" "%_mod_name%
+	call "%_mod_util%\exec" "%RCP% /FileNamePath:%SystemRoot%\System32\config\SECURITY /OutputPath:%_mod_output%" "%_mod_output%\registry_hives.log" "%_mod_name%
+	call "%_mod_util%\exec" "%RCP% /FileNamePath:%SystemRoot%\System32\config\SOFTWARE /OutputPath:%_mod_output%" "%_mod_output%\registry_hives.log" "%_mod_name%
+	call "%_mod_util%\exec" "%RCP% /FileNamePath:%SystemRoot%\System32\config\SYSTEM /OutputPath:%_mod_output%" "%_mod_output%\registry_hives.log" "%_mod_name%
+	ren %_mod_output%\registry_hives.log\SAM SAM-live
+	ren %_mod_output%\registry_hives.log\SECURITY SECURITY-live
+	ren %_mod_output%\registry_hives.log\SOFTWARE SOFTWARE-live
+	ren %_mod_output%\registry_hives.log\SYSTEM SYSTEM-live
+
+  ::call "%_mod_util%\log" "user registry hives"
+  
   call "%_mod_util%\log" "[%_mod_name%] completed module" "%_LOG%"
 
   if "%_DBG%" == "true" echo DEBUG: [%_mod_name%] leaving %cd%
