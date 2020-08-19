@@ -65,10 +65,10 @@ set _mod_name= registry
   call "%_mod_util%\log" "[%_mod_name%] collecting registry hives" "%_LOG%"
 
   call "%_mod_util%\log" "system registry hives"
-	call call "%_mod_util%\exec" "%RCP% /FileNamePath:%SystemRoot%\System32\config\SAM /OutputPath:%_mod_output%" "%_mod_output%\registry_hives.log" "%_mod_name%
-	call "%_mod_util%\exec" "%RCP% /FileNamePath:%SystemRoot%\System32\config\SECURITY /OutputPath:%_mod_output%" "%_mod_output%\registry_hives.log" "%_mod_name%
-	call "%_mod_util%\exec" "%RCP% /FileNamePath:%SystemRoot%\System32\config\SOFTWARE /OutputPath:%_mod_output%" "%_mod_output%\registry_hives.log" "%_mod_name%
-	call "%_mod_util%\exec" "%RCP% /FileNamePath:%SystemRoot%\System32\config\SYSTEM /OutputPath:%_mod_output%" "%_mod_output%\registry_hives.log" "%_mod_name%
+	call "%_mod_util%\exec" "%RCP% /FileNamePath:%SystemRoot%\System32\config\SAM /OutputPath:%_mod_output%" "%_mod_output%\registry_hives.log" "%_mod_name%"
+	call "%_mod_util%\exec" "%RCP% /FileNamePath:%SystemRoot%\System32\config\SECURITY /OutputPath:%_mod_output%" "%_mod_output%\registry_hives.log" "%_mod_name%"
+	call "%_mod_util%\exec" "%RCP% /FileNamePath:%SystemRoot%\System32\config\SOFTWARE /OutputPath:%_mod_output%" "%_mod_output%\registry_hives.log" "%_mod_name%"
+	call "%_mod_util%\exec" "%RCP% /FileNamePath:%SystemRoot%\System32\config\SYSTEM /OutputPath:%_mod_output%" "%_mod_output%\registry_hives.log" "%_mod_name%"
 	ren %_mod_output%\registry_hives.log\SAM SAM-live
 	ren %_mod_output%\registry_hives.log\SECURITY SECURITY-live
 	ren %_mod_output%\registry_hives.log\SOFTWARE SOFTWARE-live
