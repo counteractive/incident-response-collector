@@ -13,8 +13,7 @@ set _mod_name=events
 
 :setup
   :: TODO: remove when implemented
-  call "%_mod_util%\log" "[%_mod_name%] module not implented" "%_LOG%"
-  popd & exit /B 0
+ 
 
   :: operate within this module's directory
   pushd "%~dp0"
@@ -67,10 +66,10 @@ set _mod_name=events
   ::TODO: build command(s) based on the details of the module and its tool(s), see example below:
   ::call "%_mod_util%\exec" "command" "output-file" "tag (usually %_mod_name%)" "%_mod_name%"
   call "%_mod_util%\log" "Collecting event logs in *.evtx format." "%_LOG%"
-  call "%mod_util%\exec" "%PLL% -accepteula -g %_mod_output%\evtx\Security.evtx Security"  "%_mod_name%"
-  call "%mod_util%\exec" "%PLL% -accepteula -g %_mod_output%\evtx\System.evtx System"  "%_mod_name%"
-  call "%mod_util%\exec" "%PLL% -accepteula -g %_mod_output%\evtx\Application.evtx Application"  "%_mod_name%"
-  call "%mod_util%\exec" "%PLL% -accepteula -g %_mod_output%\evtx\Setup.evtx Setup"  "%_mod_name%"
+  call "%_mod_util%\exec" "%PLL% -accepteula -g %_mod_output%\evtx\Security.evtx Security"  "%_mod_name%"
+  call "%_mod_util%\exec" "%PLL% -accepteula -g %_mod_output%\evtx\System.evtx System"  "%_mod_name%"
+  call "%_mod_util%\exec" "%PLL% -accepteula -g %_mod_output%\evtx\Application.evtx Application"  "%_mod_name%"
+  call "%_mod_util%\exec" "%PLL% -accepteula -g %_mod_output%\evtx\Setup.evtx Setup"  "%_mod_name%"
 
   call "%_mod_util%\log" "[%_mod_name%] completed module" "%_LOG%"
 
