@@ -22,6 +22,7 @@ This product depends on software developed by Nir Sofer and distributed via nirs
 * [ChromeCacheView](https://www.nirsoft.net/utils/chrome_cache_view.html)
 * [MozillaCacheView](https://www.nirsoft.net/utils/mozilla_cache_viewer.html) (a.k.a., MZCacheView)
 * [IECacheView](https://www.nirsoft.net/utils/ie_cache_viewer.html)
+* [USBDeview](https://www.nirsoft.net/utils/usb_devices_view.html)
 
 ## WinAudit
 
