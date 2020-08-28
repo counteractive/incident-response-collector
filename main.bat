@@ -63,6 +63,7 @@
   call "%_modules%\activity\module"
   call "%_modules%\browsing\module"
   call "%_modules%\dirwalk\module"
+  call "%_modules%\registry\module"
   call "%_modules%\usb\module"
   call "%_modules%\session\module"
   call "%_modules%\yara_scans\module"
