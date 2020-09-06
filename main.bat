@@ -64,6 +64,8 @@
   call "%_modules%\browsing\module"
   call "%_modules%\dirwalk\module"
   call "%_modules%\session\module"
+  call "%_modules%\file_hashing\module"
+  call "%_modules%\hash_checks\module"
   call "%_modules%\yara_scans\module"
 
   :: unimplemented
