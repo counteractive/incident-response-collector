@@ -67,6 +67,8 @@
   call "%_modules%\registry\module"
   call "%_modules%\usb\module"
   call "%_modules%\session\module"
+  call "%_modules%\file_hashing\module"
+  call "%_modules%\hash_checks\module"
   call "%_modules%\yara_scans\module"
 
   :: unimplemented
